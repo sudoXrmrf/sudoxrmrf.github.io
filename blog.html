@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Things Nobody Tells You About Getting a Project Management Certificate</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .prose p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .glass-card {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container" class="fixed top-0 left-0 w-full h-1.5 bg-slate-200 dark:bg-slate-800 z-50">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-brand-500 via-indigo-500 to-accent-500 w-0 transition-all duration-150 ease-out"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-900/80 glass-card">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center justify-center p-2 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 font-bold text-sm">
+                    <i data-lucide="book-open" class="w-5 h-5 mr-1.5"></i> Operations & PM
+                </span>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <span class="hidden sm:inline-flex items-center text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full">
+                    <i data-lucide="clock" class="w-3.5 h-3.5 mr-1.5"></i> <span id="read-time">7 min read</span>
+                </span>
+                
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none" title="Toggle dark/light theme">
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+        <!-- Hero Title Section -->
+        <header class="mb-10 text-left border-b border-slate-200 dark:border-slate-800 pb-10">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-xs font-semibold mb-4">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                <span>Google PM Certificate Reflection</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight mb-6">
+                7 Things Nobody Tells You About Getting a Project Management Certificate <span class="text-brand-600 dark:text-brand-400">(When You Work in Operations)</span>
+            </h1>
+
+            <!-- Lead Subhead Quote Box -->
+            <div class="relative p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200/60 dark:from-slate-900 dark:to-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm mb-8">
+                <div class="absolute -top-3 left-6 bg-brand-600 text-white p-1 rounded-lg">
+                    <i data-lucide="quote" class="w-4 h-4"></i>
+                </div>
+                <blockquote class="text-lg sm:text-xl font-medium italic text-slate-700 dark:text-slate-300 pt-2">
+                    I signed up thinking I'd learn how to make Gantt charts look pretty. I ended up questioning my entire understanding of what it means to be good at my job. And honestly? I'm not even mad about it.
+                </blockquote>
+            </div>
+
+            <!-- Author & Metadata Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400 pt-2">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-500 to-accent-500 flex items-center justify-center text-white font-bold text-base shadow-md">
+                        OP
+                    </div>
+                    <div>
+                        <p class="font-semibold text-slate-900 dark:text-slate-200">Operations Specialist & IT Student</p>
+                        <p class="text-xs">S&R Membership Shopping &bull; AllHome Corp</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/80 px-3 py-1.5 rounded-lg text-xs font-mono">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                    <span>Google PM Certified</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Introduction Paragraphs -->
+        <article class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed space-y-6">
+            
+            <p>
+                It's 11 PM on a Tuesday. I've got MS Dynamics NAV and SAP logs open on one monitor, Coursera on the other, and a half-eaten cup noodle that stopped being warm two modules ago. Tomorrow morning I'll be back on shift scanning barcodes, reconciling inventory manifests, and riding delivery routes across Metro Manila to fund my IT degree. And right now, Google is trying to tell me that <strong>coming in under budget is actually a bad thing.</strong>
+            </p>
+
+            <p>
+                Let me be real — after spending over seven years as a Receiving Clerk and Data Encoder at S&R Membership Shopping, followed by managing SAP receiving workflows at AllHome, I enrolled in Google's PM certificate with a specific goal: "career growth" (read: an existential crisis about whether spending a decade encoding warehouse transactions counts as a real tech trajectory). I figured the course would teach me scheduling software, Gantt chart mechanics, and some buzzwords to polish my resume.
+            </p>
+
+            <p>
+                Twenty-six modules and seven courses later, that's not what happened. The certificate didn't just give me project management tools; it rewired how I look at eight-plus years of enterprise operations.
+            </p>
+
+            <p>
+                Here are the seven lessons that genuinely caught me off guard — and why they matter whether you're managing a restaurant tablet rollout or trying to keep a multi-million peso warehouse inventory from leaking money.
+            </p>
+
+            <!-- Decorative GIF / Media Banner 1 -->
+            <div class="my-8 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-lg relative group">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80" alt="Warehouse Operations and Logistics Hub" class="w-full h-64 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-6">
+                    <p class="text-white text-sm font-medium flex items-center">
+                        <i data-lucide="package" class="w-4 h-4 mr-2 text-brand-400"></i> From Warehouse Floors & Receiving Docks to Agile Project Management
+                    </p>
+                </div>
+            </div>
+
+            <!-- SECTION 1 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        1
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        The best project managers have zero authority (and that's the whole point)
+                    </h2>
+                </div>
+
+                <p>
+                    I walked into Course 1 picturing a PM as the Senior Important Person who knows the most, holds the title, and tells everyone what to do. You know the type — the one CC'd on every email who always has opinions about formatting.
+                </p>
+
+                <div class="p-4 rounded-xl bg-amber-500/10 border-l-4 border-amber-500 my-6">
+                    <p class="font-semibold text-amber-900 dark:text-amber-300 m-0">
+                        Turns out, that person is the problem, not the PM.
+                    </p>
+                </div>
+
+                <p>
+                    Real PMs rarely have direct authority over anyone on their team. Every commitment is earned through influence, credibility, and (let me be honest) well-timed data visualization. Google calls it "influencing without authority." I call it "convincing cross-functional teams to fix a broken process without being their boss, which is basically parenting but with spreadsheets."
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-700 text-white shadow-xl">
+                    <div class="flex items-center space-x-3 mb-2 text-brand-200 text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="zap" class="w-4 h-4"></i> Core PM Takeaway
+                    </div>
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0">
+                        A PM's value is measured by disasters prevented, not tasks completed.
+                    </p>
+                </div>
+
+                <p>
+                    I tested this when we needed IT to prioritize a SAP and ERP data integration. Old me would've escalated through senior management and waited two weeks for a polite non-answer. New me walked over, showed the 4% scan error rate data and what it was costing us in delayed truck turnarounds, framed it around <em>their</em> interest in avoiding rework, and connected it to the receiving team's daily friction.
+                </p>
+
+                <div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between my-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-emerald-500/10 text-emerald-500 rounded-xl">
+                            <i data-lucide="clock-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white m-0">12-Minute Conversation</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 m-0">Integration moved up 2 weeks with zero formal authority.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">Success</span>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        2
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        Coming in under budget is actually a failure (yes, really)
+                    </h2>
+                </div>
+
+                <p>
+                    This one broke my brain. In retail inventory and warehouse ops, spending less money is always treated like a win. You come in under budget, your manager smiles, everyone gets a pat on the back. Right?
+                </p>
+
+                <p class="font-semibold text-rose-600 dark:text-rose-400">
+                    In project management, consistently underspending means your estimates were garbage.
+                </p>
+
+                <p>
+                    And here's the kicker — next year, the finance department looks at your actuals, sees you didn't need all that budget, and cuts your funding. Congratulations, you played yourself.
+                </p>
+
+                <p>
+                    Course 3 reframed the budget as a <strong>success metric</strong>, not a static spending ceiling. The goal isn't to spend less. It's to estimate accurately and execute within that estimate. Going under budget because you executed efficiently? Great. Going under budget because your estimation process is broken? That's a credibility problem wearing a congratulations hat.
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-800 text-white shadow-xl border border-slate-700">
+                    <div class="flex items-center space-x-3 mb-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="dollar-sign" class="w-4 h-4"></i> Financial Paradigm Shift
+                    </div>
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0">
+                        Budget accuracy is about credibility, not frugality.
+                    </p>
+                </div>
+
+                <p>
+                    During my years tracking Cost of Goods Sold (COGS) and inventory yields at S&R, I used to see budget cuts as arbitrary. Now I build structured proposals with reserve analysis, 15% contingency buffers, and cost-of-quality breakdowns. Walking a manager through a framework instead of floating a ballpark figure is the difference between getting funded and getting ignored.
+                </p>
+
+                <!-- Financial Framework Card -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+                        <div class="text-brand-500 font-bold text-lg mb-1">Reserve Analysis</div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 m-0">Accounting for known & unknown risks</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+                        <div class="text-brand-500 font-bold text-lg mb-1">15% Contingency</div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 m-0">Protecting against scope volatility</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+                        <div class="text-brand-500 font-bold text-lg mb-1">Cost-of-Quality</div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 m-0">Balancing prevention & appraisal</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        3
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        The hardest-working team in the building might be doing the most damage
+                    </h2>
+                </div>
+
+                <p>
+                    When I first read Agile Principle 10 — "Simplicity: the art of maximizing the amount of work <strong>not done</strong>" — I actually laughed out loud. In high-volume receiving, throughput IS the metric. More pallets received. More SKUs encoded. More is more. Always.
+                </p>
+
+                <p class="text-xl font-bold text-slate-900 dark:text-white my-4">
+                    Course 5 said: no. More is waste if it's the wrong more.
+                </p>
+
+                <p>
+                    When the environment is uncertain, building something nobody uses is the most expensive mistake you can make. The goal isn't maximum volume. It's maximum <strong>value</strong> per unit of effort.
+                </p>
+
+                <p>
+                    I lived this long before I knew the Agile terminology. Back at S&R, our daily manual re-ordering process for 400+ product variants took two full hours of tedious manual calculations every single morning. Instead of grinding through 14 hours of manual data entry a week, I engineered a custom relational database in Google Sheets linking POS data directly to product mix thresholds.
+                </p>
+
+                <!-- Interactive Data Automation Visual Card -->
+                <div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800 shadow-xl overflow-hidden relative">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                            <span class="text-xs font-mono text-slate-400 ml-2">inventory_automation.py</span>
+                        </div>
+                        <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-emerald-500/20 text-emerald-400">75% Time Saved</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">Before (Manual Process)</span>
+                            <div class="p-3 bg-slate-950/80 rounded-xl text-sm font-mono border border-rose-500/30">
+                                <p class="text-slate-400 m-0">⏱️ Daily Time: <span class="text-rose-400 font-bold">2.0 Hours</span></p>
+                                <p class="text-slate-400 m-0">📊 Manual Entry: 400+ SKUs</p>
+                                <p class="text-slate-400 m-0">⚡ Weekly Grind: 14 Hours</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">After (Relational DB)</span>
+                            <div class="p-3 bg-slate-950/80 rounded-xl text-sm font-mono border border-emerald-500/30">
+                                <p class="text-slate-400 m-0">⏱️ Daily Time: <span class="text-emerald-400 font-bold">30 Minutes</span></p>
+                                <p class="text-slate-400 m-0">🤖 POS Link: Automated</p>
+                                <p class="text-slate-400 m-0">✨ Saved: 90 mins / day</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-slate-800 text-center">
+                        <p class="text-emerald-400 font-medium text-sm m-0">
+                            Process time dropped by 75% — 90 minutes of manual work per day, permanently not done.
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Nobody missed the manual spreadsheet grind. The inventory stayed accurate, and the team got their mornings back.
+                </p>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        4
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        Your team's biggest performance problem isn't skill — it's fear
+                    </h2>
+                </div>
+
+                <p>
+                    Google spent years studying what makes teams effective (Project Aristotle). They tested for technical ability, seniority, personality types, education. You know what came in at #1?
+                </p>
+
+                <div class="my-6 text-center py-8 px-6 rounded-2xl bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-brand-500/10 border border-indigo-500/20">
+                    <span class="inline-block p-3 rounded-2xl bg-indigo-500 text-white mb-3">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </span>
+                    <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight m-0">
+                        Psychological Safety
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-lg mx-auto text-sm mt-2 mb-0">
+                        The single highest indicator of high-performing teams across Google's multi-year study.
+                    </p>
+                </div>
+
+                <p>
+                    Not "hire better engineers." Not "write stricter SOPs." Whether people feel safe enough to speak up, take risks, and admit process failures without getting punished. That's the whole foundation.
+                </p>
+
+                <p>
+                    A team where people stay silent about broken data will produce worse outcomes than a less-experienced team where everyone flags anomalies freely. Every. Single. Time.
+                </p>
+
+                <p>
+                    During the COVID-19 pandemic ERP transition at S&R, while operating as an MS Dynamics NAV super-user, I led an audit of historical transaction sales against physical invoices. We uncovered a <strong>₱10M financial discrepancy</strong>. In a culture of fear, an anomaly that big gets buried or blamed on individuals. In a culture focused on systems, it gets treated as a data problem to be solved. We traced the discrepancy, cleaned the database, and protected supply chain integrity under minimal supervision.
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-slate-900 text-white shadow-xl border-l-4 border-indigo-500">
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0 text-indigo-300">
+                        If people get punished for raising small anomalies, they'll stay silent about ₱10M ones.
+                    </p>
+                </div>
+
+                <p>
+                    The practice is simple but uncomfortable: ask for help publicly, respond to process failures with curiosity instead of blame, and thank people for surfacing inconvenient truths. It feels slow. It works fast.
+                </p>
+            </section>
+
+            <!-- SECTION 5 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        5
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        Shipping the product is the easy part — making people actually use it is the job
+                    </h2>
+                </div>
+
+                <p>
+                    Course 2 drew a line between <strong>launching</strong> and <strong>landing</strong> that I think about constantly now.
+                </p>
+
+                <!-- Launch vs Land Comparison Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <div class="p-5 rounded-2xl bg-rose-500/5 border border-rose-500/20">
+                        <div class="flex items-center space-x-2 text-rose-600 dark:text-rose-400 font-bold mb-2">
+                            <i data-lucide="rocket" class="w-5 h-5"></i>
+                            <span>Launching</span>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 m-0">
+                            The deliverable is out the door. The code is deployed, or the hardware is installed.
+                        </p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/20">
+                        <div class="flex items-center space-x-2 text-emerald-600 dark:text-emerald-400 font-bold mb-2">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                            <span>Landing</span>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 m-0">
+                            The project achieved what it was actually supposed to achieve in the real world.
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    These are not the same thing, and confusing them is how projects "succeed" on paper while failing in production.
+                </p>
+
+                <p>
+                    Deploying a new barcode scanner or updating an ERP receiving module isn't success. Success is when scan error rates drop <strong>and the receiving crew actually uses the new workflow six months later.</strong> I've watched system upgrades get deployed across store branches and die quiet deaths because nobody planned for the human side — like the detailed training guide that took weeks to draft but lived on a shared drive collecting digital dust.
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white shadow-xl">
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0 text-amber-400">
+                        "Launch and forget" is the most common failure pattern in project management.
+                    </p>
+                </div>
+
+                <p>
+                    If you're not measuring adoption and operational metrics long after delivery, you're measuring the wrong thing. Adoption is a deliverable. Change management starts before you write the first line of the project plan.
+                </p>
+            </section>
+
+            <!-- SECTION 6 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        6
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        You've been project managing for years — you just don't have the vocabulary for it
+                    </h2>
+                </div>
+
+                <p>
+                    This was the most personally clarifying realization, and honestly, I wish someone had told me this five years ago.
+                </p>
+
+                <p>
+                    Course 7 asked me to unpack my operational history — across S&R, AllHome, and even logistics routing — using PM frameworks. The translation was immediate and kind of unsettling:
+                </p>
+
+                <!-- Translation Grid -->
+                <div class="my-6 space-y-3">
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">"Receiving Clerk & Data Encoder"</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-brand-500 hidden sm:block"></i>
+                        <span class="font-bold text-brand-600 dark:text-brand-400">Data Operations & Inventory Control Lead</span>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">"Auditing physical invoices against NAV records"</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-brand-500 hidden sm:block"></i>
+                        <span class="font-bold text-brand-600 dark:text-brand-400">Risk Mitigation & Database Quality Assurance</span>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">"Automating 400+ SKU order sheets"</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-brand-500 hidden sm:block"></i>
+                        <span class="font-bold text-brand-600 dark:text-brand-400">Process Optimization & Workflow Automation</span>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">"Coordinating truck deliveries across 65 branches"</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-brand-500 hidden sm:block"></i>
+                        <span class="font-bold text-brand-600 dark:text-brand-400">Multi-Site Stakeholder Logistics & Vendor Management</span>
+                    </div>
+                </div>
+
+                <p>
+                    I'd been doing project management and systems work for nearly a decade. I just didn't know the formal words for it.
+                </p>
+
+                <p>
+                    When I first asked a generic AI tool for transferable skills from a "data encoder" job description, it gave me "data entry" and "typing speed." (Thanks for nothing.) But when I fed it a specific incident log — resolving the ₱10M ERP transaction discrepancy or designing automated inventory sheets — suddenly it identified enterprise database auditing, supply chain risk management, and workflow automation.
+                </p>
+
+                <p class="font-bold text-slate-900 dark:text-white">
+                    Same experience. Different framing. Completely different career signal.
+                </p>
+
+                <p>
+                    My resume went from <em>"Responsible for entering receiving data in NAV and SAP"</em> to <strong>"Engineered an automated relational database linking POS data to stock thresholds, reducing daily ordering cycle time by 75% across 400+ product variants."</strong>
+                </p>
+
+                <p>
+                    Same work. Same person. Recruiter reads it completely differently.
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-gradient-to-r from-indigo-600 to-brand-600 text-white shadow-xl">
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0">
+                        The skills were always there. I just hadn't learned to name them.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 7 -->
+            <section class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+                <div class="flex items-start space-x-4 mb-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/20">
+                        7
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+                        Frameworks don't give you answers — they give you the nerve to decide without one
+                    </h2>
+                </div>
+
+                <p>
+                    This is what the capstone taught me, and it's the thing no single textbook can deliver.
+                </p>
+
+                <p>
+                    I can recite the five-phase risk process. I can draw a RACI chart from memory. I can explain the difference between QA and QC without checking my notes. But sitting in a capstone simulation (or a real-world warehouse bottleneck) where a vendor changes pricing terms at the last minute, the receiving floor is backed up, and two stakeholders can't agree on scope?
+                </p>
+
+                <p class="text-xl font-bold text-brand-600 dark:text-brand-400 my-4">
+                    That's where knowing turns into judgment.
+                </p>
+
+                <p>
+                    During the Sauce & Spoon capstone, the tablet vendor switched from a one-time purchase to a monthly SaaS subscription near project close. Budget approved for CapEx. No process for recurring OpEx. Classic "everything is on fire" moment.
+                </p>
+
+                <p>
+                    Instead of stalling, I compiled a cost comparison showing the subscription actually reduced year-one hardware CapEx by $4,400 while the recurring fee was offset by projected revenue gains from faster table turns. Finance signed off in 48 hours.
+                </p>
+
+                <p>
+                    No textbook gave me that exact script. The frameworks gave me the structure and the confidence to figure it out under pressure.
+                </p>
+
+                <!-- Key Takeaway Callout -->
+                <div class="my-6 p-6 rounded-2xl bg-slate-900 text-white shadow-xl border-t-4 border-brand-500">
+                    <p class="text-xl sm:text-2xl font-bold leading-snug m-0 text-brand-300">
+                        The capstone didn't teach me anything new. It forced me to discover what I'd only memorized.
+                    </p>
+                </div>
+            </section>
+
+            <!-- FINAL THOUGHTS -->
+            <section class="mt-12 pt-8 border-t-2 border-slate-300 dark:border-slate-800">
+                <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">
+                    Final thoughts
+                </h2>
+
+                <p>
+                    Seven courses. Twenty-six modules. An unreasonable amount of instant noodles consumed during late-night study sessions between delivery shifts.
+                </p>
+
+                <p>
+                    And the biggest shift wasn't a framework, a tool, or a methodology. It was this: <strong>I stopped separating "getting organized" from "doing real work."</strong>
+                </p>
+
+                <p>
+                    Every inventory audit I've run, every ERP discrepancy I've resolved, every automated spreadsheet I've built across S&R and AllHome was project management. The certificate gave me the vocabulary, the frameworks, and the confidence to own that track record professionally.
+                </p>
+
+                <p>
+                    So here's the question I keep coming back to:
+                </p>
+
+                <!-- Big Callout Question Box -->
+                <div class="my-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-brand-600 via-indigo-600 to-purple-700 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-white">
+                        <i data-lucide="help-circle" class="w-64 h-64"></i>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-extrabold leading-relaxed m-0 relative z-10">
+                        How many operations workers are out there right now — in warehouses, retail hubs, receiving docks, and small businesses — without realizing that what they do every day has a formal name, an engineering discipline, and a high-value tech trajectory waiting for them?
+                    </p>
+                </div>
+
+                <p>
+                    The future doesn't belong to people with the fanciest titles. It belongs to the operators who understand systems deeply enough to fix them, talk to machines cleanly, and deliver real outcomes — not just outputs.
+                </p>
+
+                <p>
+                    And honestly? A lot of those people are encoding receiving manifests at 6 AM and don't know it yet.
+                </p>
+
+                <hr class="my-8 border-slate-200 dark:border-slate-800">
+
+                <div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                    <p class="font-bold text-slate-900 dark:text-white m-0 mb-2">P.S.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 m-0 leading-relaxed">
+                        If you're a working student balancing operations jobs with tech studies, do yourself a favor: stop treating a PM certificate like a checkbox and start treating it like a lens. Every module gave me a new way to look at work I was already doing. The certificate didn't make me a project manager. It made me realize I already was one.
+                    </p>
+                </div>
+
+                <!-- Source Attribution Footnote -->
+                <footer class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-400 dark:text-slate-500 italic">
+                    This reflection synthesizes 26 module reflections across all 7 courses of the Google Project Management Professional Certificate. Source materials: C1.md through C7.md and corresponding module reflections (C1M1–C7M2), incorporating enterprise operations experience at Kareila Management Corporation / S&R Membership Shopping and AllHome Corp.
+                </footer>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 mt-16 py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400">
+            <p class="m-0">Designed & Interactive Web Edition &bull; Google PM Certificate Reflection</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide Icons
+            lucide.createIcons();
+
+            // Dark Theme Toggle Logic
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            themeToggleBtn.addEventListener('click', () => {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+
+            // Check preferred theme on load
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+
+            // Scroll Progress Bar Logic
+            const progressBar = document.getElementById('progress-bar');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (window.scrollY / totalHeight) * 100;
+                progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+            });
+
+            // Calculate Reading Time Dynamically
+            const textContent = document.querySelector('article').innerText;
+            const wordCount = textContent.split(/\s+/).length;
+            const readingTime = Math.ceil(wordCount / 200); // Average 200 words per minute
+            document.getElementById('read-time').innerText = `${readingTime} min read`;
+        });
+    </script>
+</body>
+</html>
